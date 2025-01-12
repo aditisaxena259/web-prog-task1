@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fullscreen Video</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background: black;
+      }
+
+      video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover; /* Ensures the video fills the screen without distortion */
+      }
+    </style>
+  </head>
+  <body>
+    <video controls autoplay>
+      <source src="screen.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
