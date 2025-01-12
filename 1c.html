@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f7f7f7;
+        }
+        .container {
+            width: 80%;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+        .header-image {
+            position: relative; /* Allows the profile image to overlap relative to this section */
+            width: 100%;
+            height: 1000px;
+            background: url('cityscape.jpg') no-repeat center center/cover;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .profile-image
+        {
+            margin-top: 120px; /* Adjust this value to control vertical placement */
+            z-index: 10; 
+        }
+        .profile-image img {
+            position: absolute; /* Enables overlap */
+            top: 50px; /* Adjust to overlap the header image */ /* Centers the image horizontally */
+            transform: translateX(-50%); /* Ensures the image is truly centered */
+            width: 240px;
+            height: 240px;
+            border-radius: 50%; /* Circular shape */
+            border: 3px solid white; /* Optional white border */
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+        }
+
+        .section-title {
+            background: #ff7043;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            bottom: 50px;
+            text-align: left;
+        }
+        ul, p, li {
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Image -->
+        <div class="header-image"></div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="section-title">PROFILE</div>
+                <p style="margin-bottom: 50px; margin-top: 20px; text-align: center;">2nd-year B.Tech Computer Science Student | Entrepreneur | Innovator</p>
+    
+                <p>
+
+                    A highly motivated and driven Computer Science student at VIT Vellore, with a passion for technology, entrepreneurship, and problem-solving. As the co-founder of SentinelGuard AI, a pre-incubated startup focused on cyber threat intelligence, I lead efforts in ideation, market research, and team management. I am also deeply involved in various tech initiatives, including my roles as a core member of the CodeChef and Computer Society of India (CSI) organizing committees for Gravitas 2024, where I successfully managed frontend development, event coordination, and API integrations for sold-out events.
+                    
+                    With a strong foundation in machine learning, front-end development (React, Next.js), sentiment analysis, and cybersecurity, I have expanded my skill set to backend development, where I am currently building expertise in server-side technologies. I have worked on implementing authentication systems and server architecture for my startup and other projects. Additionally, I thrive in fast-paced, innovative environments, having participated in hackathons such as InvenTiv-2025, where I developed real-time anomaly detection systems for border surveillance. My research also focuses on network intrusion detection systems and their vulnerabilities to adversarial attacks.</p>
+                
+
+                <div class="section-title">ACHIEVEMENTS </div>
+                <ul>
+                    <li><strong>2024:</strong> Junior Core Committee member in top clubs of VIT - CodeChef,CSI,IEEECS</li>
+                    <li><strong>2024:</strong> Started a Startup - SentinelGuardAI</li>
+                    <li><strong>2023:</strong> Winner of VisionQuest - ECell </li>
+                </ul>
+                <div class="section-title">CO-CURRICULARS</div>
+                <ul>
+                    <li>Club Tech Work in Web Development</li>
+                    <li>Research Projects in Machine Learning</li>
+                </ul>
+                <div class="section-title">EXTRACURRICULARS</div>
+                <ul>
+                    <li>Singing</li>
+                    <li>Debate on Weekends</li>
+                    <li>Stand up Comedy </li>
+                </ul>
+                <div class="section-title">TECHNICAL SKILL SET </div>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Frontend & Backend </li>
+                    <li>CyberSecurity-Encryption</li>
+                </ul>
+
+                <div class="section-title">EDUCATION</div>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Max Marks</th>
+                        <th>Scored Marks</th>
+                        <th>Percentage</th>
+                        <th>Class</th>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td>Sunrays School</td>
+                        <td>500</td>
+                        <td>450</td>
+                        <td>90%</td>
+                        <td>First Class</td>
+                    </tr>
+                    <tr>
+                        <td>XII</td>
+                        <td>Sunrays School</td>
+                        <td>600</td>
+                        <td>550</td>
+                        <td>91.67%</td>
+                        <td>First Class</td>
+                    </tr>
+                    <tr>
+                        <td>1st Year</td>
+                        <td>VIT Vellore</td>
+                        <td>1000</td>
+                        <td>920</td>
+                        <td>9.2 CGPA</td>
+                        <td>First Class</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Year</td>
+                        <td>VIT Vellore</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>                    
+                </table>
+                <div class="section-title">HOBBIES </div>
+                <ul>
+                    <li>Poetry Writing</li>
+                    <li>Public Speaking</li>
+                </ul>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="profile-image">
+                    <img src="profile.jpeg" alt="Profile Picture">
+                </div>
+                <h2>Aditi Saxena</h2>
+                <hr>
+                <div class="contact-info">
+                    <h3 style="background-color: white; color: black; padding:5px">CONTACT</h3>
+                    <p>Aditi Saxena</p>
+                    <p>+91 9811912821</p>
+                    <p>A1001, Mahindra Windchimes</p>
+                    <p>Bengaluru, India</p>
+                    <p><a href="mailto:aditisaxena@gmail.com" style="color: white;">aditisaxena@gmail.com</a></p>
+                </div>
+                <h3 style="background-color: white; color: black; padding:5px">SOCIAL MEDIA</h3>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/aditi-saxena-4674ab222/">LinkedIn.com/aditisaxena</a>
+                    <a href="https://www.instagram.com/aditisaxena/">instagram@aditisaxena</a>
+                    <a href="https://www.github.com/">github@aditisaxena</a>
+                </div>in
+            </div>
+        </div>
+    </div>
+</body>
+</html>

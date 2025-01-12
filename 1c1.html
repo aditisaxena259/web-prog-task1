@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f7f7f7;
+        }
+        .container {
+            width: 80%;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+        .header-image {
+            position: relative; /* Allows the profile image to overlap relative to this section */
+            width: 100%;
+            height: 1000px;
+            background: url('cityscape.jpg') no-repeat center center/cover;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .profile-image
+        {
+            margin-top: 50px; /* Adjust this value to control vertical placement */
+            z-index: 10; 
+        }
+        .profile-image img {
+            position: absolute; /* Enables overlap */
+            top: 110px; /* Adjust to overlap the header image */ /* Centers the image horizontally */
+            transform: translateX(-50%); /* Ensures the image is truly centered */
+            width: 240px;
+            height: 240px;
+            border-radius: 50%; /* Circular shape */
+            border: 3px solid white; /* Optional white border */
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+        }
+
+        .section-title {
+            background: #ff7043;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            bottom: 50px;
+            text-align: left;
+        }
+        ul, p, li {
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Image -->
+        <div class="header-image"></div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="section-title">PROFILE</div>
+                <p>Suvidh Jain is a dynamic and forward-thinking second-year Computer Science student at VIT Vellore with a passion for technology and entrepreneurship. As the co-founder of SentinelGuard AI, a pre-incubated startup focusing on cyber threat intelligence, Suvidh is deeply committed to developing innovative solutions to tackle emerging cybersecurity challenges. With a strong foundation in both frontend and backend development, Suvidh is an all-rounder in the tech field, excelling in problem-solving and software development.
+
+                    In addition to his entrepreneurial pursuits, Suvidh is an active member of prominent tech clubs, including the Mozilla Firefox Club (MFC) and the Apple Developer Club (ADG) at VIT. His academic excellence, demonstrated by consistently being one of the top CGPA holders in his cohort, further reflects his dedication and drive. Suvidh is always looking for opportunities to push the boundaries of technology and make meaningful contributions to the tech community.</p>
+                
+
+                <div class="section-title">ACHIEVEMENTS </div>
+                <ul>
+                    <li><strong>2024:</strong> Junior Core Committee member in MFC and ADG clubs of VIT</li>
+                    <li><strong>2024:</strong> Started a Startup - SentinelGuardAI</li>
+                    <li><strong>2023:</strong> One of the top CGPA Scorers in 1st semester </li>
+                </ul>
+                <div class="section-title">CO-CURRICULARS</div>
+                <ul>
+                    <li>Club Tech Work in Web Development</li>
+                    <li>Research Projects in Cyber Security</li>
+                </ul>
+                <div class="section-title">EXTRACURRICULARS</div>
+                <ul>
+                    <li>Drumming</li>
+                    <li>Dancing</li>
+                    <li>Acting</li>
+                </ul>
+                <div class="section-title">TECHNICAL SKILL SET </div>
+                <ul>
+                    
+                    <li>Frontend & Backend </li>
+                    <li>CyberSecurity-Encryption</li>
+                </ul>
+
+                <div class="section-title">EDUCATION</div>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Max Marks</th>
+                        <th>Scored Marks</th>
+                        <th>Percentage</th>
+                        <th>Class</th>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td>Ekya School</td>
+                        <td>500</td>
+                        <td>450</td>
+                        <td>90%</td>
+                        <td>First Class</td>
+                    </tr>
+                    <tr>
+                        <td>XII</td>
+                        <td>Ekya School</td>
+                        <td>600</td>
+                        <td>588</td>
+                        <td>98%</td>
+                        <td>First Class</td>
+                    </tr>
+                    <tr>
+                        <td>1st Year</td>
+                        <td>VIT Vellore</td>
+                        <td>1000</td>
+                        <td>980</td>
+                        <td>9.8 CGPA</td>
+                        <td>First Class</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Year</td>
+                        <td>VIT Vellore</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>                    
+                </table>
+                <div class="section-title">HOBBIES </div>
+                <ul>
+                    <li>Story Writing</li>
+                    <li>Sketching</li>
+                </ul>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="profile-image">
+                    <img src="profile1.jpeg" alt="Profile Picture">
+                </div>
+                <h2>Suvidh Jain</h2>
+                <hr>
+                <div class="contact-info">
+                    <h3 style="background-color: white; color: black; padding:5px">CONTACT</h3>
+                    <p>SuvidhJain</p>
+                    <p>+91 1234567890</p>
+                    <p>Vicuna Heights</p>
+                    <p>Surat, India</p>
+                    <p><a href="mailto:suvidhjain@gmail.com" style="color: white;">suvidhjain@gmail.com</a></p>
+                </div>
+                <h3 style="background-color: white; color: black; padding:5px">SOCIAL MEDIA</h3>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/suvidhjain/">LinkedIn.com/suvidhjain</a>
+                    <a href="https://www.instagram.com/suvidhjain/">instagram@suvidhjain</a>
+                    <a href="https://www.github.com/suvidhjain/">github@suvidhjain</a>
+                </div>in
+            </div>
+        </div>
+    </div>
+</body>
+</html>
